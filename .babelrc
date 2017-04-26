@@ -1,0 +1,19 @@
+{
+  "presets": [
+    [
+      "latest",
+      {
+        "es2015": {
+          "modules": false
+        }
+      }
+    ],
+    "flow"
+  ],
+  "plugins": [
+    "external-helpers"
+  ],
+  "ignore": [
+    "dist/*.js"
+  ]
+}

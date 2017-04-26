@@ -1,0 +1,39 @@
+{
+  "name": "Four",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/four.min.js",
+  "files": [
+    "src",
+    "dist/*.js"
+  ],
+  "scripts": {
+    "test": "npm run lint && flow check",
+    "dev": "rollup -w -c build/config.js --environment target:development",
+    "build": "node build/build.js",
+    "flow": "flow check --all",
+    "lint": "eslint src test"
+  },
+  "keywords": [],
+  "author": "zhangyatao@baidu.com",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-latest": "^6.24.1",
+    "eslint": "^3.19.0",
+    "eslint-plugin-flowtype": "^2.32.1",
+    "flow-bin": "^0.44.2",
+    "rollup": "^0.41.6",
+    "rollup-plugin-alias": "^1.3.1",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-buble": "^0.15.0",
+    "rollup-plugin-flow-no-whitespace": "^1.0.0",
+    "rollup-plugin-json": "^2.1.1",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-replace": "^1.1.1",
+    "rollup-watch": "^3.2.2",
+    "uglify-js": "^2.8.22"
+  }
+}
