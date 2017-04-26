@@ -1,7 +1,7 @@
 {
-  "name": "Four",
+  "name": "four",
   "version": "0.0.1",
-  "description": "",
+  "description": "web framework",
   "main": "dist/four.min.js",
   "files": [
     "src",
@@ -14,7 +14,9 @@
     "flow": "flow check --all",
     "lint": "eslint src test"
   },
-  "keywords": [],
+  "keywords": [
+    "web framework"
+  ],
   "author": "zhangyatao@baidu.com",
   "license": "MIT",
   "devDependencies": {
@@ -35,5 +37,13 @@
     "rollup-plugin-replace": "^1.1.1",
     "rollup-watch": "^3.2.2",
     "uglify-js": "^2.8.22"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YataoZhang/Four.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YataoZhang/Four/issues"
+  },
+  "homepage": "https://github.com/YataoZhang/Four#readme"
 }
