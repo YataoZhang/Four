@@ -8,7 +8,7 @@
     "dist/*.js"
   ],
   "scripts": {
-    "test": "npm run lint && flow check",
+    "test": "npm run lint && npm run flow",
     "dev": "rollup -w -c build/config.js --environment target:development",
     "build": "node build/build.js",
     "flow": "flow check --all",
