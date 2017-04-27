@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-# Created by .ignore support plugin (hsz.mobi)
-### Example user template template
-### Example user template
-
-# IntelliJ project files
-.idea
-*.iml
-out
-gen
-
-=======
-# Logs
 logs
 *.log
 npm-debug.log*
@@ -47,4 +34,4 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
->>>>>>> 6b32cba341709a77147b2057103d4775e71e644e
+.idea/
