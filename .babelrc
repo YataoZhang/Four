@@ -11,7 +11,8 @@
     "flow"
   ],
   "plugins": [
-    "external-helpers"
+    "external-helpers",
+    "transform-class-properties"
   ],
   "ignore": [
     "dist/*.js"

@@ -1,4 +1,5 @@
 /**
+ * @flow
  * Created by yataozhang on 2017/4/26.
  */
 if (!Array.prototype.forEach) {
@@ -29,7 +30,7 @@ if (!Array.prototype.forEach) {
 
 
 if (!Array.prototype.map) {
-    Array.prototype.map = function (callback: () => mixed) {
+    Array.prototype.map = function (callback: () => mixed): Array<mixed> {
         let T, A, k;
         if (this == null) {
             throw new TypeError('this is null or not defined');
@@ -84,7 +85,7 @@ if (!Array.prototype.find) {
 
 
 if (!Array.prototype.some) {
-    Array.prototype.some = function (fun: () => boolean) {
+    Array.prototype.some = function (fun: () => boolean): boolean {
         'use strict';
         if (this == null) {
             throw new TypeError('Array.prototype.some called on null or undefined');

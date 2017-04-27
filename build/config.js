@@ -1,6 +1,8 @@
 /**
  * Created by zhangyatao on 2017/4/26.
  */
+
+let path = require('path');
 let json = require('rollup-plugin-json');
 let babel = require('rollup-plugin-babel');
 let replace = require('rollup-plugin-replace');
@@ -27,7 +29,11 @@ module.exports = {
         }),
         flow(),
         buble(),
-        alias()
+        alias({
+            eventEmitter: path.resolve('./src/utilies/events/EventEmitter.js'),
+            polyfill: path.resolve('./src/utilies/polyfill/index.js'),
+            utilies: path.resolve('./src/utilies/util/index.js')
+        })
     ],
     dest: 'dist/bundle.js',
     sourceMap: true

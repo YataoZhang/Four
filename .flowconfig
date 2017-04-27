@@ -3,6 +3,7 @@
 .*/test/.*
 .*/build/.*
 .*/dist/.*
+.*/src/utilies/polyfill/.*
 
 [include]
 ./src

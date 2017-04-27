@@ -1,8 +1,9 @@
 /**
+ * @flow
  * Created by yataozhang on 2017/4/26.
  */
 if (typeof Object.assign != 'function') {
-    Object.assign = function (target: Object | null, ...varArgs: Array<Object>): Object {
+    Object.assign = function (target: Object | null): Object {
         'use strict';
         if (target == null) { 
             throw new TypeError('Cannot convert undefined or null to object');
